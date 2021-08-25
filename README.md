@@ -12,4 +12,11 @@
 	6- Verificar si un string es un palíndromo.
 	7- Dado 3 numeros, devolver el mayor. Hacer una function, adaptada de la anterior, para que funcione con cualquier cantidad de numeros.
 
-## Se pueden usar metodos auxiliares en caso de ser necesario.
+#### Se pueden usar metodos auxiliares en caso de ser necesario.
+
+#
+#### Para probar los metodos:
+- Descomentar la linea de codigo del metodo que desee probar (los ejemplos estan abajo de todo el codigo).
+- Escribir en consola 'node Helpers.js' desde el archivo de Test-programadores.
+
+###### Mi version de node v12.18.4
