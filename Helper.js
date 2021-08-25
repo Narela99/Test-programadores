@@ -17,7 +17,6 @@
         }
         
         return mayor;
-
     }
     dejarString(array){ // Dado un arreglo, eliminar todos los "undefined", "null", "false" y 0 (no sus valores en string). Iterar solo 1 vez.
         var newArray = [];
@@ -36,6 +35,7 @@
             }
             else this.desanidarArray(array[i])
         }
+
         return this.initArray 
     }
     truncateStr(str){ // saca punto y comas de un string, convierte todo a minuscula, y saca tildes.
@@ -43,6 +43,7 @@
         var string = minuscula.replace(/,/g, "");
         var newStr = string.replace(/\./g, '');
         var newString = newStr.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
         return newString;
     }
     masRepetido(string){ //Dado un string, devolver un objeto/array que indique la palabra que mas veces se repite, y su cantidad.
@@ -57,13 +58,13 @@
         var stringRepetido = Object.keys(obj).find(key => obj[key] === masRepeticiones)  //obtiene la key del valor mas alto
         var newObj = {}
         newObj[stringRepetido] = masRepeticiones; // armo el nuevo objeto con el string y el numero de repeticiones que tiene que retornar
+        
         return newObj
     }
     palindromo(string){
-        
         var str = this.truncateStr(string);
         var newStr = str.replace(/ /g, "")
-        if(string.length === 1){
+        if(string.length === 1 || string.length === 0){
             console.log('Si es un palindromo')
             return 'Si es un palindromo'
         }
@@ -85,7 +86,6 @@
 }
 
 
-
 var newHelper = new Helper();
 
 //EJEMPLOS DE CADA METODO:
@@ -96,5 +96,5 @@ var newHelper = new Helper();
 //console.log(newHelper.desanidarArray([1, [2, [3, 4]], 'hola', [1, 'buenos dias']]))
 //console.log(newHelper.masRepetido('Este es un string, el cual es un string, donde se repite muchas veces la palabra string es.'))
 //newHelper.truncateStr('Este es un string, el cual es un string, donde se repite muchas veces la palabra es')
-//newHelper.palindromo('Somos, o no somos')
+newHelper.palindromo('Somos, o no somos.')
 //console.log(newHelper.numMax(2, 5, 10, 7, 15, 12, 20, 9))
