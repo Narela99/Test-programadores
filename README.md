@@ -1,6 +1,6 @@
 # Test-programadores
 
-##Armar una clase Helper, la cual tenga los siguientes metodos:
+## Armar una clase Helper, la cual tenga los siguientes metodos:
 
 	1- Multiplicar 2 numeros, sin utilizar el operador de multiplicacion.
 	2- Obtener el numero mayor dentro de un arreglo. Solo iterar 1 vez.
@@ -12,4 +12,4 @@
 	6- Verificar si un string es un palíndromo.
 	7- Dado 3 numeros, devolver el mayor. Hacer una function, adaptada de la anterior, para que funcione con cualquier cantidad de numeros.
 
-##Se pueden usar metodos auxiliares en caso de ser necesario.
+## Se pueden usar metodos auxiliares en caso de ser necesario.
