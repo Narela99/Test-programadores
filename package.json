@@ -1,0 +1,19 @@
+{
+  "name": "test-programadores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Helper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narela99/Test-programadores.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Narela99/Test-programadores/issues"
+  },
+  "homepage": "https://github.com/Narela99/Test-programadores#readme"
+}
