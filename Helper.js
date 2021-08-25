@@ -61,7 +61,7 @@
         
         return newObj
     }
-    palindromo(string){
+    palindromo(string){ //Verificar si un string es un palíndromo.
         var str = this.truncateStr(string);
         var newStr = str.replace(/ /g, "")
         if(string.length === 1 || string.length === 0){
@@ -79,7 +79,7 @@
         return 'No es un palidromo'
         
     }
-    numMax(num1 = 0, num2 = 0, num3 = 0,...numN){
+    numMax(num1 = 0, num2 = 0, num3 = 0,...numN){ //Dado 3 numeros, devolver el mayor. Hacer una function, adaptada de la anterior, para que funcione con cualquier cantidad de numeros.
         var maxNum = Math.max(num1, num2, num3,...numN)
         return maxNum
     }
