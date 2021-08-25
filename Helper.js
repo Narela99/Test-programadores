@@ -78,19 +78,17 @@
         return 'No es un palidromo'
         
     }
-    mayorNum(num1 = 0, num2 = 0, num3 = 0,...numN){
-        
+    numMax(num1 = 0, num2 = 0, num3 = 0,...numN){
         var maxNum = Math.max(num1, num2, num3,...numN)
         return maxNum
     }
-
 }
 
 
 
 var newHelper = new Helper();
 
-//EJEMPLOS:
+//EJEMPLOS DE CADA METODO:
 
 //console.log(newHelper.multiplicate(6, 5))
 //console.log(newHelper.mayorNum([16, 3, 19, 8, 15]))
@@ -98,5 +96,5 @@ var newHelper = new Helper();
 //console.log(newHelper.desanidarArray([1, [2, [3, 4]], 'hola', [1, 'buenos dias']]))
 //console.log(newHelper.masRepetido('Este es un string, el cual es un string, donde se repite muchas veces la palabra string es.'))
 //newHelper.truncateStr('Este es un string, el cual es un string, donde se repite muchas veces la palabra es')
-newHelper.palindromo('Somos, o no somos')
-//console.log(newHelper.mayorNum(2, 5, 10, 7, 15, 12, 20, 9))
+//newHelper.palindromo('Somos, o no somos')
+//console.log(newHelper.numMax(2, 5, 10, 7, 15, 12, 20, 9))
