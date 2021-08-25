@@ -38,10 +38,11 @@
         }
         return this.initArray 
     }
-    truncateStr(str){ // saca punto y comas de un string, y convierte todo a minuscula
+    truncateStr(str){ // saca punto y comas de un string, convierte todo a minuscula, y saca tildes.
         var minuscula = str.toLowerCase()
         var string = minuscula.replace(/,/g, "");
-        var newString = string.replace(/\./g, '');
+        var newStr = string.replace(/\./g, '');
+        var newString = newStr.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
         return newString;
     }
     masRepetido(string){ //Dado un string, devolver un objeto/array que indique la palabra que mas veces se repite, y su cantidad.
@@ -76,14 +77,20 @@
         console.log('No es un palindromo')
         return 'No es un palidromo'
         
-        
-        
     }
+    mayorNum(num1 = 0, num2 = 0, num3 = 0,...numN){
+        
+        var maxNum = Math.max(num1, num2, num3,...numN)
+        return maxNum
+    }
+
 }
 
 
 
 var newHelper = new Helper();
+
+//EJEMPLOS:
 
 //console.log(newHelper.multiplicate(6, 5))
 //console.log(newHelper.mayorNum([16, 3, 19, 8, 15]))
@@ -92,3 +99,4 @@ var newHelper = new Helper();
 //console.log(newHelper.masRepetido('Este es un string, el cual es un string, donde se repite muchas veces la palabra string es.'))
 //newHelper.truncateStr('Este es un string, el cual es un string, donde se repite muchas veces la palabra es')
 newHelper.palindromo('Somos, o no somos')
+//console.log(newHelper.mayorNum(2, 5, 10, 7, 15, 12, 20, 9))
